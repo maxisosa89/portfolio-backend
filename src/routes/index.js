@@ -1,11 +1,13 @@
-const router = require("express").Router();
+const express = require('express')
+const projectsRouter = require('./projects')
 
-//Middlewares
+const router = express.Router()
 
-// Controllers
+// Middlewares
 
-/*          Configuracion de rutas:        */
+// projects routes
+router.use('/projects', projectsRouter)
 
-/* router.post("/auth/login", AuthController.login) */
+// teches routes
 
-module.exports = router;
+module.exports = router
