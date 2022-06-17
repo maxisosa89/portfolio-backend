@@ -12,6 +12,10 @@ module.exports = (sequelize) => {
       type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false
     },
+    projectSummary: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
     projectDescription: {
       type: DataTypes.TEXT,
       allowNull: false
