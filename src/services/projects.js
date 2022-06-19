@@ -4,15 +4,19 @@ const { Project, Tech } = db
 
 module.exports = {
     getProjects: async () => {
-        const allProjects = await Project.findAll({
-            include: {
-                model: Tech,
-                attributes: ['techTitle', 'techImg'], as: "tech",
-                through: {
-                    attributes: [],
+        try {
+            const allProjects = await Project.findAll({
+                include: {
+                    model: Tech,
+                    attributes: ['techTitle', 'techImg'], as: "tech",
+                    through: {
+                        attributes: [],
+                    }
                 }
-            }
-        })
-        return allProjects
+            })
+            return allProjects
+        } catch (err) {
+            console.log(err)
+        }
   }
 }
