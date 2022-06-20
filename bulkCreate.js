@@ -34,9 +34,10 @@ module.exports = async function createInfo() {
             projectSummary: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit deleniti tenetur est quo, reiciendis, possimus provident voluptatum saepe rem quibusdam debitis officiis nesciunt! Facilis quasi impedit reiciendis quibusdam accusantium! Ipsam unde officiis dolorum laboriosam sapiente culpa repellendus asperiores, perferendis reiciendis, ut voluptate ad. Quisquam veritatis, recusandae ad repudiandae eligendi maxime?',
             projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum excepturi nesciunt culpa fugit, quia exercitationem itaque deleniti architecto rerum laborum vero aspernatur alias magnam aliquam ab, cumque quis in nostrum autem expedita repellendus nobis quas illo? Pariatur quos totam facilis fugit dolore reprehenderit tempora delectus laudantium hic. Ab ullam nisi recusandae blanditiis nesciunt error, et consectetur tenetur nobis fugiat quae illum libero velit architecto explicabo quam dolor debitis facilis dignissimos consequatur. Incidunt consequuntur alias labore vero ducimus reprehenderit impedit ipsum magni consequatur itaque iste quos provident, harum excepturi odio tenetur et? Facere dolores corporis est eos cum eius. Officiis.',
             siteUrl: 'https://github.com/maxisosa89',
-            frontUrl: 'https://github.com/maxisosa89/portfolio-fronted',
+            frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
-            techs: ['JavaScript', 'React', 'NodeJs', 'Sequelize']
+            techs: ['JavaScript', 'React', 'NodeJs', 'Sequelize'],
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
         },
         {
             projectTitle: 'Project2',
@@ -50,9 +51,10 @@ module.exports = async function createInfo() {
             projectSummary: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit deleniti tenetur est quo, reiciendis, possimus provident voluptatum saepe rem quibusdam debitis officiis nesciunt! Facilis quasi impedit reiciendis quibusdam accusantium! Ipsam unde officiis dolorum laboriosam sapiente culpa repellendus asperiores, perferendis reiciendis, ut voluptate ad. Quisquam veritatis, recusandae ad repudiandae eligendi maxime?',
             projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum excepturi nesciunt culpa fugit, quia exercitationem itaque deleniti architecto rerum laborum vero aspernatur alias magnam aliquam ab, cumque quis in nostrum autem expedita repellendus nobis quas illo? Pariatur quos totam facilis fugit dolore reprehenderit tempora delectus laudantium hic. Ab ullam nisi recusandae blanditiis nesciunt error, et consectetur tenetur nobis fugiat quae illum libero velit architecto explicabo quam dolor debitis facilis dignissimos consequatur. Incidunt consequuntur alias labore vero ducimus reprehenderit impedit ipsum magni consequatur itaque iste quos provident, harum excepturi odio tenetur et? Facere dolores corporis est eos cum eius. Officiis.',
             siteUrl: 'https://github.com/maxisosa89',
-            frontUrl: 'https://github.com/maxisosa89/portfolio-fronted',
+            frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
-            techs: ['JavaScript', 'NodeJs', 'Sequelize']
+            techs: ['JavaScript', 'NodeJs', 'Sequelize'],
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
         },
         {
             projectTitle: 'Project3',
@@ -66,9 +68,10 @@ module.exports = async function createInfo() {
             projectSummary: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit deleniti tenetur est quo, reiciendis, possimus provident voluptatum saepe rem quibusdam debitis officiis nesciunt! Facilis quasi impedit reiciendis quibusdam accusantium! Ipsam unde officiis dolorum laboriosam sapiente culpa repellendus asperiores, perferendis reiciendis, ut voluptate ad. Quisquam veritatis, recusandae ad repudiandae eligendi maxime?',
             projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum excepturi nesciunt culpa fugit, quia exercitationem itaque deleniti architecto rerum laborum vero aspernatur alias magnam aliquam ab, cumque quis in nostrum autem expedita repellendus nobis quas illo? Pariatur quos totam facilis fugit dolore reprehenderit tempora delectus laudantium hic. Ab ullam nisi recusandae blanditiis nesciunt error, et consectetur tenetur nobis fugiat quae illum libero velit architecto explicabo quam dolor debitis facilis dignissimos consequatur. Incidunt consequuntur alias labore vero ducimus reprehenderit impedit ipsum magni consequatur itaque iste quos provident, harum excepturi odio tenetur et? Facere dolores corporis est eos cum eius. Officiis.',
             siteUrl: 'https://github.com/maxisosa89',
-            frontUrl: 'https://github.com/maxisosa89/portfolio-fronted',
+            frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
-            techs: ['JavaScript']
+            techs: ['JavaScript'],
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
         },
         {
             projectTitle: 'Project4',
@@ -82,9 +85,10 @@ module.exports = async function createInfo() {
             projectSummary: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit deleniti tenetur est quo, reiciendis, possimus provident voluptatum saepe rem quibusdam debitis officiis nesciunt! Facilis quasi impedit reiciendis quibusdam accusantium! Ipsam unde officiis dolorum laboriosam sapiente culpa repellendus asperiores, perferendis reiciendis, ut voluptate ad. Quisquam veritatis, recusandae ad repudiandae eligendi maxime?',
             projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum excepturi nesciunt culpa fugit, quia exercitationem itaque deleniti architecto rerum laborum vero aspernatur alias magnam aliquam ab, cumque quis in nostrum autem expedita repellendus nobis quas illo? Pariatur quos totam facilis fugit dolore reprehenderit tempora delectus laudantium hic. Ab ullam nisi recusandae blanditiis nesciunt error, et consectetur tenetur nobis fugiat quae illum libero velit architecto explicabo quam dolor debitis facilis dignissimos consequatur. Incidunt consequuntur alias labore vero ducimus reprehenderit impedit ipsum magni consequatur itaque iste quos provident, harum excepturi odio tenetur et? Facere dolores corporis est eos cum eius. Officiis.',
             siteUrl: 'https://github.com/maxisosa89',
-            frontUrl: 'https://github.com/maxisosa89/portfolio-fronted',
+            frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
-            techs: ['NodeJs', 'Sequelize']
+            techs: ['NodeJs', 'Sequelize'],
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
         },
         {
             projectTitle: 'Project5',
@@ -98,9 +102,10 @@ module.exports = async function createInfo() {
             projectSummary: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit deleniti tenetur est quo, reiciendis, possimus provident voluptatum saepe rem quibusdam debitis officiis nesciunt! Facilis quasi impedit reiciendis quibusdam accusantium! Ipsam unde officiis dolorum laboriosam sapiente culpa repellendus asperiores, perferendis reiciendis, ut voluptate ad. Quisquam veritatis, recusandae ad repudiandae eligendi maxime?',
             projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum excepturi nesciunt culpa fugit, quia exercitationem itaque deleniti architecto rerum laborum vero aspernatur alias magnam aliquam ab, cumque quis in nostrum autem expedita repellendus nobis quas illo? Pariatur quos totam facilis fugit dolore reprehenderit tempora delectus laudantium hic. Ab ullam nisi recusandae blanditiis nesciunt error, et consectetur tenetur nobis fugiat quae illum libero velit architecto explicabo quam dolor debitis facilis dignissimos consequatur. Incidunt consequuntur alias labore vero ducimus reprehenderit impedit ipsum magni consequatur itaque iste quos provident, harum excepturi odio tenetur et? Facere dolores corporis est eos cum eius. Officiis.',
             siteUrl: 'https://github.com/maxisosa89',
-            frontUrl: 'https://github.com/maxisosa89/portfolio-fronted',
+            frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
-            techs: ['JavaScript', 'React', 'NodeJs', 'Sequelize']
+            techs: ['JavaScript', 'React', 'NodeJs', 'Sequelize'],
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
         },
         {
             projectTitle: 'Project6',
@@ -114,9 +119,10 @@ module.exports = async function createInfo() {
             projectSummary: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit deleniti tenetur est quo, reiciendis, possimus provident voluptatum saepe rem quibusdam debitis officiis nesciunt! Facilis quasi impedit reiciendis quibusdam accusantium! Ipsam unde officiis dolorum laboriosam sapiente culpa repellendus asperiores, perferendis reiciendis, ut voluptate ad. Quisquam veritatis, recusandae ad repudiandae eligendi maxime?',
             projectDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum excepturi nesciunt culpa fugit, quia exercitationem itaque deleniti architecto rerum laborum vero aspernatur alias magnam aliquam ab, cumque quis in nostrum autem expedita repellendus nobis quas illo? Pariatur quos totam facilis fugit dolore reprehenderit tempora delectus laudantium hic. Ab ullam nisi recusandae blanditiis nesciunt error, et consectetur tenetur nobis fugiat quae illum libero velit architecto explicabo quam dolor debitis facilis dignissimos consequatur. Incidunt consequuntur alias labore vero ducimus reprehenderit impedit ipsum magni consequatur itaque iste quos provident, harum excepturi odio tenetur et? Facere dolores corporis est eos cum eius. Officiis.',
             siteUrl: 'https://github.com/maxisosa89',
-            frontUrl: 'https://github.com/maxisosa89/portfolio-fronted',
+            frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
-            techs: ['JavaScript', 'Sequelize']
+            techs: ['JavaScript', 'Sequelize'],
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
         }
     ]
     const projectsValidate = await Project.findAll();
