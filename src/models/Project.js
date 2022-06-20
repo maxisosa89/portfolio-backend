@@ -20,6 +20,10 @@ module.exports = (sequelize) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
+    projectFunctions: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false
+    },
     siteUrl: {
       type: DataTypes.STRING,
       allowNull: false
