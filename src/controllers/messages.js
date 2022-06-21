@@ -1,5 +1,6 @@
 const {
-    getMessages
+    getMessages,
+    postMessage
   } = require('../services/messages')
   
   module.exports = {
@@ -10,5 +11,9 @@ const {
       } catch (err) {
         console.log(err)
       }
+    },
+    post: async (req, res) => {
+      const messageCreated = await postMessage(req)
+      res.send(messageCreated)
     }
   }

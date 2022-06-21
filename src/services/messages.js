@@ -10,5 +10,13 @@ module.exports = {
         } catch (err) {
             console.log(err)
         }
-  }
+    },
+    postMessage: async (req) => {
+        try {
+          const newMessage = await Message.create(req.body)
+          return newMessage
+        } catch (err) {
+            console.log(err)
+        }
+    },
 }
