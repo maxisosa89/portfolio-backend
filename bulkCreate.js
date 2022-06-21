@@ -1,4 +1,4 @@
-const { Project, Tech } = require('./src/db.js');
+const { Project, Tech, Message } = require('./src/db.js');
 
 module.exports = async function createInfo() {
     const teches = [{
@@ -143,4 +143,34 @@ module.exports = async function createInfo() {
         proj.addTech(techDb)
       })
     })
+
+    const messages = [{
+        name: "Maximiliano Sosa",
+        mail: "maxi@mail.com",
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+    },
+    {
+        name: "adsasd Sosa",
+        mail: "maxi@mail.com",
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+    },
+    {
+        name: "asdsd Sosa",
+        mail: "maxi@mail.com",
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+    },
+    {
+        name: "sadasds Sosa",
+        mail: "maxi@mail.com",
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+    },
+    {
+        name: "Maximiliano asdsadas",
+        mail: "maxi@mail.com",
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+    },
+    ]
+    const messagesValidate = await Message.findAll();
+    messagesValidate.length === 0 &&
+    await Message.bulkCreate(messages)
 }
