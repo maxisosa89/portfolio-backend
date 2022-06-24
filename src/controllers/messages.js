@@ -1,7 +1,8 @@
 const {
     getMessages,
     postMessage,
-    putMessage
+    putMessage,
+    deleteMessage
   } = require('../services/messages')
   
   module.exports = {
@@ -14,12 +15,29 @@ const {
       }
     },
     post: async (req, res) => {
-      const messageCreated = await postMessage(req)
-      res.send(messageCreated)
+      try {
+        const messageCreated = await postMessage(req)
+        res.send(messageCreated)
+      } catch (err) {
+        console.log(err)
+      }
     },
     put: async (req,res) => {
-      const { id } = req.params
-      const messageEdited = await putMessage(id)
-      res.send(messageEdited)
+      try {
+        const { id } = req.params
+        const messageEdited = await deleteMessage(id)
+        res.send(messageEdited)
+      } catch (err) {
+        console.log(err)
+      }
+    },
+    del: async (req, res) => {
+      try {
+        const { id } = req.params
+        const messageDeleted = await deleteMessage(id)
+        res.send("Mensaje eliminado")
+      } catch (err) {
+        console.log(err)
+      }
     }
   }

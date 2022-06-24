@@ -28,5 +28,13 @@ module.exports = {
         } catch(err) {
             console.log(err)
         }
+    },
+    deleteMessage: async (id) => {
+        try {
+            const msgDeleted = await Message.destroy({ where: { id } });
+            return msgDeleted
+        } catch (err) {
+            console.log(err)
+        }
     }
 }
