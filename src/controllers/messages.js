@@ -25,7 +25,7 @@ const {
     put: async (req,res) => {
       try {
         const { id } = req.params
-        const messageEdited = await deleteMessage(id)
+        const messageEdited = await putMessage(id)
         res.send(messageEdited)
       } catch (err) {
         console.log(err)
