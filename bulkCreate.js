@@ -23,7 +23,7 @@ module.exports = async function createInfo() {
 
     const projects = [
         {
-            projectTitle: 'Project1',
+            projectTitle: 'Project1proyectoconnombre mas largo que tu tia',
             projectImg: [
                 'https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg',
                 'https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800',
@@ -147,7 +147,8 @@ module.exports = async function createInfo() {
     const messages = [{
         name: "Maximiliano Sosa",
         mail: "maxi@mail.com",
-        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.',
+        read: true
     },
     {
         name: "adsasd Sosa",

@@ -19,4 +19,14 @@ module.exports = {
             console.log(err)
         }
     },
+    putMessage: async (id) => {
+        try {
+          const editMessage = await Message.findByPk(id)
+          editMessage.read = !editMessage.read
+          editMessage.save()
+          return editMessage
+        } catch(err) {
+            console.log(err)
+        }
+    }
 }
