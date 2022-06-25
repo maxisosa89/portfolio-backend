@@ -10,5 +10,13 @@ module.exports = {
         } catch (err) {
             console.log(err)
         }
-  }
+    },
+    postTech: async (req) => {
+        try {
+          const newTech = await Tech.create(req.body)
+          return newTech
+        } catch (err) {
+            console.log(err)
+        }
+    },
 }
