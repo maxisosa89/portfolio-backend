@@ -1,5 +1,6 @@
 const {
-    getTechs
+    getTechs,
+    postTech,
   } = require('../services/techs')
   
   module.exports = {
@@ -10,5 +11,13 @@ const {
       } catch (err) {
         console.log(err)
       }
-    }
+    },
+    post: async (req, res) => {
+      try {
+        const techCreated = await postTech(req)
+        res.send(techCreated)
+      } catch (err) {
+        console.log(err)
+      }
+    },
   }
