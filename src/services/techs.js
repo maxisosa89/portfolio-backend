@@ -5,7 +5,11 @@ const { Tech } = db
 module.exports = {
   getTechs: async () => {
     try {
-      const allTechs = await Tech.findAll()
+      const allTechs = await Tech.findAll({
+        order: [
+          ['techTitle', 'ASC'],
+        ],
+      })
       return allTechs
     } catch (err) {
       console.log(err)
