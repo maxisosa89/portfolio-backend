@@ -2,6 +2,7 @@ const {
     getTechs,
     postTech,
     putTech,
+    deleteTech
   } = require('../services/techs')
   
   module.exports = {
@@ -30,4 +31,13 @@ const {
         console.log(err)
       }
     },
+    del: async (req, res) => {
+      try {
+        const { id } = req.params
+        const techDeleted = await deleteTech(id)
+        res.send("Tech eliminada")
+      } catch (err) {
+        console.log(err)
+      }
+    }
   }
