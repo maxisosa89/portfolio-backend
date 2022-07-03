@@ -34,4 +34,12 @@ module.exports = {
       console.log(err)
     }
   },
+  deleteTech: async (id) => {
+    try {
+      const techDeleted = await Tech.destroy({ where: { id } });
+      return techDeleted
+    } catch (err) {
+      console.log(err)
+    }
+  }
 }
