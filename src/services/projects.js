@@ -35,6 +35,18 @@ module.exports = {
             console.log(err)
         }
     },
+    postProject: async (req) => {
+      try {
+        const newProject = await Project.create(req.body)
+        req.body.tech.map(async (t) => {
+            const techToAdd = await Tech.findOne({ where: { techTitle: t.techTitle } })
+            newProject.addTech(techToAdd)
+        })
+        return newProject
+      } catch (err) {
+        console.log(err)
+      }
+    },
     deleteProject: async (id) => {
       try {
         const projectDeleted = await Project.destroy({ where: { id } });
