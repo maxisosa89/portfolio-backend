@@ -148,27 +148,32 @@ module.exports = async function createInfo() {
         name: "Maximiliano Sosa",
         mail: "maxi@mail.com",
         message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.',
-        read: true
+        read: true,
+        createdAt: new Date(2022, 6, 5, 14, 35)
     },
     {
         name: "adsasd Sosa",
         mail: "maxi@mail.com",
-        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.',
+        createdAt: new Date(2022, 6, 14, 9, 23)
     },
     {
         name: "asdsd Sosa",
         mail: "maxi@mail.com",
-        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.',
+        createdAt: new Date(2022, 5, 28, 16, 54)
     },
     {
         name: "sadasds Sosa",
         mail: "maxi@mail.com",
-        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.',
+        createdAt: new Date(2022, 5, 20, 19, 01)
     },
     {
         name: "Maximiliano asdsadas",
         mail: "maxi@mail.com",
-        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.'
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quos tenetur voluptatibus quo. Laudantium sunt iste reprehenderit nobis nihil, neque veniam omnis iusto a autem voluptate fugit doloribus dolorum ducimus quaerat maiores, saepe explicabo, temporibus similique? Quae distinctio accusamus pariatur laborum sit? Cupiditate sed nostrum aliquid ad, labore debitis quisquam.',
+        createdAt: new Date(2022, 6, 23, 4, 28)
     },
     ]
     const messagesValidate = await Message.findAll();
