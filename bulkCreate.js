@@ -1,4 +1,5 @@
-const { Project, Tech, Message } = require('./src/db.js');
+const { Project, Tech, Message, User } = require('./src/db.js');
+const bcrypt = require('bcryptjs')
 
 module.exports = async function createInfo() {
     const teches = [{
@@ -179,4 +180,12 @@ module.exports = async function createInfo() {
     const messagesValidate = await Message.findAll();
     messagesValidate.length === 0 &&
     await Message.bulkCreate(messages)
+
+    passCrypt = bcrypt.hashSync("123456", Number.parseInt(10));
+    const user = {
+        nameUser: "Maxi",
+        email: "msosa89@outlook.com",
+        password: passCrypt
+    }
+    await User.create(user)
 }
