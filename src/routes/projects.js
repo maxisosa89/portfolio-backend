@@ -8,15 +8,15 @@ const {
   put,
   del
 } = require('../controllers/projects')
-
+const auth = require('../middlewares/auth')
 
 router.get('/', get)
 router.get('/:id', getById)
 
-router.post('/', post)
+router.post('/', auth, post)
 
-router.put('/:id', put)
+router.put('/:id', auth, put)
 
-router.delete('/:id', del)
+router.delete('/:id', auth, del)
 
 module.exports = router

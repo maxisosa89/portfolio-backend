@@ -2,10 +2,12 @@ const express = require('express')
 const projectsRouter = require('./projects')
 const techsRouter = require('./techs')
 const messagesRouter = require('./messages')
+const userRouter = require('./user')
 
 const router = express.Router()
 
-// Middlewares
+// user routes
+router.use('/login', userRouter)
 
 // projects routes
 router.use('/projects', projectsRouter)
