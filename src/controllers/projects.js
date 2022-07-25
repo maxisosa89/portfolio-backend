@@ -1,6 +1,7 @@
 const {
   getProjects,
-  getProjectById
+  getProjectById,
+  deleteProject
 } = require('../services/projects')
 
 module.exports = {
@@ -17,6 +18,15 @@ module.exports = {
       const { id } = req.params
       const project = await getProjectById(id)
       res.send(project)
+    } catch (err) {
+      console.log(err)
+    }
+  },
+  del: async (req, res) => {
+    try {
+      const { id } = req.params
+      const projectDeleted = await deleteProject(id)
+      res.send("Proyecto eliminado")
     } catch (err) {
       console.log(err)
     }
