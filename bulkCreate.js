@@ -24,7 +24,7 @@ module.exports = async function createInfo() {
 
     const projects = [
         {
-            projectTitle: 'Project1proyectoconnombre mas largo que tu tia',
+            projectTitle: 'Project1',
             projectImg: [
                 'https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg',
                 'https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800',
@@ -38,7 +38,8 @@ module.exports = async function createInfo() {
             frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
             techs: ['JavaScript', 'React', 'NodeJs', 'Sequelize'],
-            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación'],
+            createdAt: new Date(2022, 6, 5)
         },
         {
             projectTitle: 'Project2',
@@ -55,7 +56,8 @@ module.exports = async function createInfo() {
             frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
             techs: ['JavaScript', 'NodeJs', 'Sequelize'],
-            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación'],
+            createdAt: new Date(2022, 6, 20)
         },
         {
             projectTitle: 'Project3',
@@ -72,7 +74,8 @@ module.exports = async function createInfo() {
             frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
             techs: ['JavaScript'],
-            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación'],
+            createdAt: new Date(2022, 1, 15)
         },
         {
             projectTitle: 'Project4',
@@ -89,7 +92,8 @@ module.exports = async function createInfo() {
             frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
             techs: ['NodeJs', 'Sequelize'],
-            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación'],
+            createdAt: new Date(2022, 8, 1)
         },
         {
             projectTitle: 'Project5',
@@ -106,7 +110,8 @@ module.exports = async function createInfo() {
             frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
             techs: ['JavaScript', 'React', 'NodeJs', 'Sequelize'],
-            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación'],
+            createdAt: new Date(2022, 3, 30)
         },
         {
             projectTitle: 'Project6',
@@ -123,7 +128,8 @@ module.exports = async function createInfo() {
             frontUrl: 'https://github.com/maxisosa89/portfolio-frontend',
             backUrl: 'https://github.com/maxisosa89/portfolio-backend',
             techs: ['JavaScript', 'Sequelize'],
-            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación']
+            projectFunctions: ['Paginado', 'Filtros', 'Diseño responsive', 'Autenticación'],
+            createdAt: new Date(2022, 6, 25)
         }
     ]
     const projectsValidate = await Project.findAll();
