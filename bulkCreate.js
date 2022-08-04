@@ -1,4 +1,4 @@
-const { Project, Tech, Message, User } = require('./src/db.js');
+const { Project, Tech, Message, User, About } = require('./src/db.js');
 const bcrypt = require('bcryptjs')
 
 module.exports = async function createInfo() {
@@ -194,4 +194,23 @@ module.exports = async function createInfo() {
         password: passCrypt
     }
     await User.create(user)
+
+    const about = {
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum asperiores voluptas dolorem excepturi blanditiis suscipit amet voluptatibus repellendus iste!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum asperiores voluptas dolorem excepturi blanditiis suscipit amet voluptatibus repellendus iste!",
+        softSkills: ["Skill", "Skill", "Skill", "Skill", "Skill", "Skill"],
+        subSkills: ["Skill: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque commodi soluta possimus nostrum harum fuga laudantium porro unde numquam!", "Skill: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque commodi soluta possimus nostrum harum fuga laudantium porro unde numquam!", "Skill: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque commodi soluta possimus nostrum harum fuga laudantium porro unde numquam!", "Skill: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque commodi soluta possimus nostrum harum fuga laudantium porro unde numquam!", "Skill: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque commodi soluta possimus nostrum harum fuga laudantium porro unde numquam!", "Skill: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque commodi soluta possimus nostrum harum fuga laudantium porro unde numquam!"],
+        files: [
+            {
+                url: "https://res.cloudinary.com/dg7fmdsmw/image/upload/v1656843099/Portfolio/CV/tcanpxggjxahqvlxi2n3.pdf",
+                height: "297",
+                width: "210"
+            },
+            {
+                url: "https://res.cloudinary.com/dg7fmdsmw/image/upload/v1659168356/Portfolio/CV/Diploma_Henry_kiejpc.pdf",
+                height: "279",
+                width: "216"
+            }
+        ]
+    }
+    await About.create(about)
 }
