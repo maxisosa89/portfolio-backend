@@ -207,8 +207,8 @@ module.exports = async function createInfo() {
             },
             {
                 url: "https://res.cloudinary.com/dg7fmdsmw/image/upload/v1659168356/Portfolio/CV/Diploma_Henry_kiejpc.pdf",
-                height: "279",
-                width: "216"
+                height: "216",
+                width: "279"
             }
         ]
     }
